@@ -7,24 +7,24 @@
   <link rel="stylesheet" href="style.css"></link>
   <script src="script.js"></script>
 </head>
-<body onload="logRequire()">
+<body>
   <div class="container">
-    <form>
+    <form action="javascript:void(0);">
     <h1>Rejestracja</h1>
     <label>Pierwsze Imie*</label>
-    <input type="text" name="FirstName" placeholder="Jan">
+    <input type="text" id="FirstName" placeholder="Jan">
     <label>Drugie Imie</label>
-    <input type="text" name="SecondName" placeholder="Karol">
+    <input type="text" id="SecondName" placeholder="Karol">
     <label>Nazwisko*</label>
-    <input type="text" name="LastName" placeholder="Kowalski">
+    <input type="text" id="LastName" placeholder="Kowalski">
     <label>Data Urodzenia*</label>
-    <input type="date" name="DateOfBirth">
+    <input type="date" id="DateOfBirth">
     <label>Login*</label>
-    <input type="text" name="login" placeholder="jan.kowalski">
+    <input type="text" id="login" placeholder="jan.kowalski">
     <label>Hasło*</label>
-    <input type="password" name="password" placeholder="TajneHaslo123">
-    <button>Zarejestruj się</button>
-    <a href="register.html">Zaloguj się*</a>
+    <input type="password" id="password" placeholder="TajneHaslo123">
+    <button onclick="CreateClient()">Zarejestruj się</button>
+    <a href="login.html">Zaloguj się*</a>
     </form>
   </div>
 
