@@ -115,7 +115,7 @@ const requestOptions = {
   body: JSON.stringify(data),
 };
 
-  fetch(`${apiUrl}/client`, requestOptions)
+  fetch(`${apiUrl}/mail`, requestOptions)
   .then(response => {
     if (!response.ok) {
       alert ("Błąd!")
